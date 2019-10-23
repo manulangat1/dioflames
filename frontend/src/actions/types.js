@@ -1,0 +1,6 @@
+export const GET_HOME  = "GET_HOME"
+export const GET_ABOUT  = "GET_ABOUT"
+export const GET_SERVICE = "GET_SERVICE"
+export const GET_ADDRESS = "GET_ADDRESS"
+export const ADD_MESSAGE = "ADD_MESSAGE"
+export const GET_MISSION = "GET_MISSION"

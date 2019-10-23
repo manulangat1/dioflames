@@ -1,0 +1,5 @@
+Hello {{name}},
+Thank you for reaching out to us. You will be contacted as soon as possible.
+
+Dioflames solutions,
+0723002027

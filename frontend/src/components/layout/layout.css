@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran&display=swap');
+*{
+    scroll-behavior: smooth;
+}
+:root{
+    --primary-color: #333;
+    --secondary-color: #444;
+    --overlay-color: rgba(0,0,0,0.7)
+}
+
+.nav{
+    margin: 0;
+    padding:0;
+    font-family: 'Catamaran', sans-serif;
+    scroll-behavior: smooth;
+}
+h1,h2,h3,h4,h5,h6{
+    line-height: 1.3;
+}
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding:  0 2rem;
+}
+#page-nav label, #hamburger{
+    display: none;
+}
+.navbar{
+    font-size: 1.2rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    background-color: #6d6d6d;
+    height: 60px;
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navbar .container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.navbar .logo{
+    font-size :2rem;
+}
+.navbar .nav{
+    justify-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar .nav a{
+    padding:  0 1rem;
+}
+.navbar .nav a:hover{
+    color: #555;   
+}
+.navbar .nav a:target{
+    color: #ffffff;
+}
+
+@media screen and (max-width:768px){
+    .navbar{
+        height:80px;
+    }
+    .navbar .container{
+        display: grid;
+        /* grid-template-columns: 0; */
+    }
+    .showing{
+        max-height: 20em;
+    }
+    .handle{
+        display: block;
+    }
+}
