@@ -1,2 +1,2 @@
 web: gunicorn dioflames.wsgi --log-file -
-worker: celery worker --app=tasks.app
+worker: celery worker --backend=tasks.backend
